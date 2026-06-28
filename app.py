@@ -39,7 +39,7 @@ def index():
 # ---------------------------------------------------------------------------
 
 @app.route("/submit", methods=["POST"])
-@limiter.limit("10 per minute;100 per day")
+@limiter.limit("10 per minute;1000 per day")
 def submit():
     """
     Accepts a JSON payload, runs AI-detection and stylometric analysis,
