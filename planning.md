@@ -96,8 +96,8 @@ Scores are interpreted as follows:
 | Final Score | Classification |
 | --- | ---: |
 | 0.00 - 0.30 | Likely Human | 
-| 0.31 - 0.70 | Uncertain |
-| 0.71 - 1.00 | Likely AI | 
+| >0.30 - 0.70 | Uncertain |
+| >0.70 - 1.00 | Likely AI | 
 
 The "Uncertain" category is intentionally wide because false positives (incorrectly labeling human writing as AI-generated) are considered more harmful than false negatives.
 
